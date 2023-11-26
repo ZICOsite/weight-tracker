@@ -1,0 +1,101 @@
+.weight {
+    padding: 50px 0;
+
+    &__title {
+        font-size: 36px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    &__current {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
+        place-content: center;
+        gap: 6px;
+        background: #fff;
+        margin: 0 auto 30px;
+        box-shadow: 0 4px 12px rgba(66, 184, 131, 0.3);
+        border: 5px solid #42b883;
+
+        &-span {
+            font-weight: 700;
+            font-size: 36px;
+        }
+
+        small {
+            font-style: italic;
+            color: #444;
+        }
+    }
+
+    &__form {
+        width: min(600px, 100%);
+        margin: 0 auto 30px;
+        display: flex;
+        border-radius: 8px;
+        overflow: hidden;
+        border: 2px solid transparent;
+        transition: 0.4s;
+
+        &:hover {
+            border-color: #42b883;
+            box-shadow: 0 4px 12px rgba(66, 184, 131, 0.3);
+        }
+
+        &-input {
+            background: #fff;
+            padding: 12px 16px;
+            font-size: 20px;
+            width: 100%;
+        }
+
+        &-btn {
+            width: min(170px, 100%);
+            background: #42b883;
+            color: #fff;
+            font-size: 20px;
+            cursor: pointer;
+        }
+    }
+
+    &__statistics {
+
+        &-title {
+            font-size: 30px;
+            font-weight: 400;
+            color: #444;
+            margin-bottom: 20px;
+        }
+
+        &-list {
+            display: grid;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        &-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 16px;
+            background: #fff;
+
+            &:nth-of-type(even) {
+                background: #eee;
+            }
+
+            small {
+                color: #444;
+                font-style: italic;
+            }
+        }
+
+        &-span {
+            font-size: 18px;
+            font-weight: 700;
+        }
+    }
+
+}
